@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.title-page {
+  font-weight: 600 !important;
+  font-size: 40px;
+  line-height: 60px;
+
+  background: linear-gradient(267deg, red 2%, blue 106%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+h2 {
+  font-weight: 600 !important;
+  font-size: 32px;
+  line-height: 48px;
+  color: #454545;
+}
+h3 {
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 24px;
+  line-height: 36px;
+  color: #454545;
+}
+h4 {
+  font-weight: 600 !important;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3c3dbf;
+}
+h5 {
+  font-weight: 500 !important;
+  font-size: 14px;
+  line-height: 21px;
+}
+h6 {
+  font-weight: 400 !important;
+  font-size: 20px;
+  line-height: 16px;
+  color: #454545;
+}
+span.title {
+  font-weight: 400 !important;
+  font-size: 13px;
+  line-height: 20px;
+  color: #a1a1a1;
+}
+
+.card-wrapper {
+  background: #ffffff;
+  border: 1px solid #f4f4f4;
+  border-radius: 14px;
+  box-shadow: 0px 6px 30px rgba(206, 206, 206, 0.25);
+}
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 40px;
+  height: 40px;
+  background: #e4e5ff;
+  border-radius: 6px;
+  color: #3c3dbf;
+}
+.icon-wrapper-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 40px;
+  height: 40px;
+  background: #e4e5ff;
+  border-radius: 6px;
+  color: #3c3dbf;
+}
+.icon-wrapper-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 40px;
+  height: 40px;
+  background: #e4e5ff;
+  border-radius: 6px;
+  color: #ff3666;
+}
+
+.text-purple {
+  color: #3c3dbf;
+}
+
+.icon {
+  font-size: 50px !important;
+}
+
+.money-in {
+  color: #3c3dbf;
+}
+.money-out {
+  color: #ff3666;
+}
