@@ -67,6 +67,7 @@ class App extends React.Component {
 
   componentDidMount() {
     if (this.state.summary.length < 1) {
+      console.log('nodata')
     } else {
       this.fnCount();
     }
@@ -93,7 +94,7 @@ class App extends React.Component {
                 <div className="icon-wrapper mb-1">
                   <BsWallet2 />
                 </div>
-                <span className="title">pemasukan</span>
+                <span className="title">Pemasukan</span>
                 <h3 className="fw-bold">RP. {this.state.moneyIncome},-</h3>
                 <span className="title text-purple fw-bold">
                   {this.state.transakasiIn}
@@ -106,7 +107,7 @@ class App extends React.Component {
                 <div className="icon-wrapper mb-1">
                   <FaRegMoneyBillAlt />
                 </div>
-                <span className="title">pemasukan</span>
+                <span className="title">Pengeluaran</span>
                 <h3 className="fw-bold">RP. {this.state.moneyOut},-</h3>
                 <span className="title text-purple fw-bold">
                   {this.state.transaksiOut}

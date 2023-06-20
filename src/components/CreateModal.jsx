@@ -10,11 +10,13 @@ class CreateModal extends React.Component {
       nominal: "",
       date: "",
       category: "",
+      saveData: [],
     };
     this.handleClose = this.handleClose.bind(this);
     this.handleShow = this.handleShow.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.addItem = this.addItem.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   addItem() {
@@ -46,6 +48,28 @@ class CreateModal extends React.Component {
       [evt.target.name]: evt.target.value,
     });
   }
+  
+
+  handleSubmit(e){
+    e.preventDefault()
+
+    const newData = {
+      desc : this.state.desc,
+      nominal : this.state.nominal,
+      date : this.state.date,
+      category : this.state.category,
+    }
+    const saveData = [...this.state.saveData, newData]
+    localStorage.setItem('data', JSON.stringify(saveData))
+
+    this.setState({
+      desc: '',
+      nominal: '',
+      date: '',
+      category: '',
+      saveData
+    })
+  }
 
   render() {
     return (
@@ -58,6 +82,7 @@ class CreateModal extends React.Component {
           <Modal.Header closeButton>
             <Modal.Title>{this.props.head}</Modal.Title>
           </Modal.Header>
+          <form  onSubmit={this.handleSubmit}>
           <Modal.Body>
             <div className="mb-3">
               <label className="form-label">Deskripsi</label>
@@ -120,6 +145,8 @@ class CreateModal extends React.Component {
               Save
             </button>
           </Modal.Footer>
+
+          </form>
         </Modal>
       </>
     );

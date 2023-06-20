@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+load pertama 
+data dari localstorage {
+    transkaksi
+    pemasukan dan pengeluaran
+    uang
+    jika tidak{
+        munculkan pesan "sata tdk ada"
+    }
+}
+add data{
+    add to localstorage sumarry [
+        desc: "",
+      nominal: "",
+      date: "",
+      category: "",
+    ],
+    sisaUang: 0,
+      presentaseMoney: 0,
+      moneyIncome: 0,
+      moneyOut: 0,
+      transakasiIn: 0,
+      transaksiOut: 0,
+}
